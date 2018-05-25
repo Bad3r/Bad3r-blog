@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9bc201-e0a1-4041-b373-1ebe99b87e59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,13 +16,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
@@ -59,11 +63,6 @@
               <caret line="59" column="104" selection-start-line="59" selection-start-column="104" selection-end-line="59" selection-end-column="104" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="foot.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/foot.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="elements.html" pinned="false" current-in-tab="false">
@@ -229,7 +228,7 @@
       <updated>1527027344573</updated>
       <workItem from="1527027345737" duration="112000" />
       <workItem from="1527204744073" duration="5547000" />
-      <workItem from="1527215743355" duration="11804000" />
+      <workItem from="1527215743355" duration="12351000" />
     </task>
     <task id="LOCAL-00001" summary="working on configuration and the about page">
       <created>1527215320810</created>
@@ -399,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527231735749</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="trying to make the site build using Travis CI">
+      <created>1527232378267</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1527232378267</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17463000" />
+    <option name="totallyTimeSpent" value="18010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -453,7 +459,8 @@
     <MESSAGE value="changed blog layout" />
     <MESSAGE value="changed index.html" />
     <MESSAGE value="made an example post." />
-    <option name="LAST_COMMIT_MESSAGE" value="made an example post." />
+    <MESSAGE value="trying to make the site build using Travis CI" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to make the site build using Travis CI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_config.yml">
@@ -572,9 +579,12 @@
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
