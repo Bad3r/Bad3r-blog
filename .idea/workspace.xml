@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba9bc201-e0a1-4041-b373-1ebe99b87e59" name="Default" comment="" />
+    <list default="true" id="ba9bc201-e0a1-4041-b373-1ebe99b87e59" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -64,8 +66,8 @@
         <entry file="file://$PROJECT_DIR$/about.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="408">
-                <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <first_editor relative-caret-position="306">
+                <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -182,7 +184,7 @@
       <updated>1527027344573</updated>
       <workItem from="1527027345737" duration="112000" />
       <workItem from="1527204744073" duration="5547000" />
-      <workItem from="1527215743355" duration="4195000" />
+      <workItem from="1527215743355" duration="4445000" />
     </task>
     <task id="LOCAL-00001" summary="working on configuration and the about page">
       <created>1527215320810</created>
@@ -240,11 +242,25 @@
       <option name="project" value="LOCAL" />
       <updated>1527221169012</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixing layout on about.md">
+      <created>1527221239152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527221239152</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixing layout on about.md">
+      <created>1527221352984</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1527221352984</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9854000" />
+    <option name="totallyTimeSpent" value="10104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -372,8 +388,8 @@
     <entry file="file://$PROJECT_DIR$/about.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="408">
-            <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>
