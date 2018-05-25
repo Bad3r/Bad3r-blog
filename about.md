@@ -17,11 +17,11 @@ As well as to force me to actively think about the various concepts i learn and 
 also i hope it might help others at some point, like many other blogs and sites that i read to get a starting point on various subjects that relates to computer science and security.
 
 
+    
+    
 
-
-
-
-
+   
+   
 
 <div class="box">
   <p>
