@@ -7,7 +7,7 @@ sitemap:
     lastmod: 2018-05-24
     changefreq: weekly
 ---
-## About my Site
+## About my Blog
 
 <span class="image left"><img src="{{ "/images/about_top.jpg" | absolute_url }}" alt="" /></span>
 
@@ -22,7 +22,7 @@ also i hope it might help others at some point, like many other blogs and sites 
 
    
    
-
+### Important:
 <div class="box">
   <p>
   Please note that this site is work under progress. Am not very familiar with HTML and am working on learning more about it and more about Markdown.
