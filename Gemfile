@@ -6,4 +6,5 @@ gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
 gem 'jekyll-paginate'
+gem "github-pages", "~> 168"
 gem "rake"
