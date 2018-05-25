@@ -5,7 +5,8 @@ description:        "— A computing security enthusiast blog where I write abou
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 # temporary url
-url: "https://nifty-minsky-8f0c8b.netlify.com/" # the base hostname & protocol for your site
+url: "https://bd3r.github.io" # the base hostname & protocol for your site
+#url: "https://nifty-minsky-8f0c8b.netlify.com/" # the base hostname & protocol for your site
 
 defaults:
 - scope:
