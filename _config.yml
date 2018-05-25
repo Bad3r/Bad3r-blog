@@ -77,7 +77,7 @@ jekyll-mentions:
 safe: False
 lsi: False
 username: bd3r
-repo: jasper2
+repo: bad3r-blog
 branch: master
 relative_source: ../bad3r-blog/
 destination: ../_site/
