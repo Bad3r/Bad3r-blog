@@ -3,7 +3,7 @@ title:              '>_ Bad3r'
 bio:                '— A computing security enthusiast blog where I write about what I learn and what I find interesting'
 description:        "— A computing security enthusiast blog where I write about what I learn and what I find interesting"
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 # temporary url
 url: "https://nifty-minsky-8f0c8b.netlify.com/" # the base hostname & protocol for your site
 
