@@ -8,6 +8,7 @@ image: "/images/workProgress.jpg"
 
 ## this is an example post
 
+<span class="image fit"><img src="{{ "/images/workProgress" | absolute_url }}" alt="" /></span>
 
 site was build using Jekyll read more about it : [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
 <br><br>
