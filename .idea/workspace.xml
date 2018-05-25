@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ba9bc201-e0a1-4041-b373-1ebe99b87e59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,9 +56,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rakefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Rakefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-828" />
           </provider>
         </entry>
       </file>
@@ -91,16 +100,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -116,6 +115,7 @@
       <find>massi</find>
       <find>full sto</find>
       <find>full</find>
+      <find>jasper2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +225,7 @@
       <updated>1527027344573</updated>
       <workItem from="1527027345737" duration="112000" />
       <workItem from="1527204744073" duration="5547000" />
-      <workItem from="1527215743355" duration="13013000" />
+      <workItem from="1527215743355" duration="14727000" />
     </task>
     <task id="LOCAL-00001" summary="working on configuration and the about page">
       <created>1527215320810</created>
@@ -416,11 +416,32 @@
       <option name="project" value="LOCAL" />
       <updated>1527232997397</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added Rakefile">
+      <created>1527233336768</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1527233336768</updated>
+    </task>
+    <task id="LOCAL-00029" summary="working on travis ci">
+      <created>1527233550083</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1527233550083</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added github-pages gem to gemfile">
+      <created>1527233911141</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1527233911141</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18672000" />
+    <option name="totallyTimeSpent" value="20386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -472,7 +493,10 @@
     <MESSAGE value="made an example post." />
     <MESSAGE value="trying to make the site build using Travis CI" />
     <MESSAGE value="added rake gem to gemfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added rake gem to gemfile" />
+    <MESSAGE value="added Rakefile" />
+    <MESSAGE value="working on travis ci" />
+    <MESSAGE value="added github-pages gem to gemfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added github-pages gem to gemfile" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_config.yml">
@@ -595,13 +619,18 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
