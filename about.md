@@ -14,7 +14,7 @@ sitemap:
 The goal of this blog is to keep track of resources i use to learn form as well as a personal reference for future me.
 As well as to force me to actively think about the various concepts i learn and information i gather.
 
-also i hope it might help others at some point, like many other blogs and sites that i read to get a starting point on various subjects that relates to computer science and security.
+also i hope it might help others at some point, like many other blogs and sites that i read to get a starting point on various subjects that relates to computer science and security.                                                                                                                                                                          
 
 
     
