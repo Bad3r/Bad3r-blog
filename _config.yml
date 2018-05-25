@@ -81,7 +81,7 @@ username: bd3r
 repo: bad3r-blog
 branch: master
 relative_source: ../bad3r-blog/
-destination: ../_site/
+destination: ./gh-pages/
 production_url:  https://bd3r.github.io/bad3r-blog/
 source_url:  https://github.com/bd3r/bad3r-blog/
 
