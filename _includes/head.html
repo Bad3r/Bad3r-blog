@@ -1,6 +1,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+<!-- CSP(Content Security Policy) -->
+<META HTTP-EQUIV='Content-Security-Policy' CONTENT="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';">
 <title>{{ page.title }}</title>
 <meta name="description" content="{{ page.description }}">
 
