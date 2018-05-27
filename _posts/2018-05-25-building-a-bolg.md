@@ -15,7 +15,7 @@ site was build using Jekyll read more about it : [how to install Jekyll](https:/
 <br><br>
 thanks for checking on my progress !
 
-'''java
+    {% highlight java %}
 
        import java.util.Scanner;
 
@@ -29,4 +29,4 @@ thanks for checking on my progress !
         System.out.println( "Hello " + name + "!" );
         }
         }
-'''
+    {% endhighlight %}
