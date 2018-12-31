@@ -15,6 +15,8 @@ site was build using Jekyll read more about it : [how to install Jekyll](https:/
 <br><br>
 thanks for checking on my progress !
 
+testing code snippet:
+
     {% highlight java %}
 
        import java.util.Scanner;
