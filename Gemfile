@@ -8,3 +8,4 @@ gem 'jekyll-feed'
 gem 'jekyll-paginate'
 gem "github-pages"
 gem "rake"
+gem 'jekyll-admin', group: :jekyll_plugins

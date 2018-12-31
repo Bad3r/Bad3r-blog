@@ -1,8 +1,10 @@
 ---
+title: Welcome to my new blog
+permalink: "/blog/:title/"
 layout: post
-title:  "Welcome to my new blog"
-date:   2018-05-25
-excerpt: "working on building my blog, here is an example post"
+author: Bad3r
+date: '2018-05-25'
+excerpt: working on building my blog, here is an example post
 image: "/images/workProgress.jpg"
 comments: true
 ---
