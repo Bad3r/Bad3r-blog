@@ -63,7 +63,7 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://bad3r.xyz
 
 
 # Settings for builing master branch with travis-ci
