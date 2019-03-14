@@ -41,7 +41,7 @@ To solve this challenge click on the site icon top left then in the "Mobile pass
 The password we got from level #1 was "thr3e" which is a typo for "three" I entered it and got to level #3.
 
 
-### Challenge $3:
+### Challenge #3:
 
 > Find the number of bits required to represent one character in the original ASCII encoding...
 > Multiply it by 1702
