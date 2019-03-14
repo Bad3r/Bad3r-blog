@@ -10,7 +10,10 @@ comments: true
 ## ae27ff challenges 1-5 sloutions
 
 
-<p>Decided to write the sloutions i use to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> challenges.</p>
+<p>Decided to write the sloutions i use to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> challenges.
+<a href="http://ae27ff.meme.tips/">ae27ff</a> is a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources.
+Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
+</p>
 <br><br>
 
 ### Challenge #1:
@@ -28,4 +31,35 @@ To solve this challenge click on the site icon top left then in the "Mobile pass
     </li>
   </ol>
 </div>
+
+
+### Challenge #2:
+
+> Apologies,
+> It appears our developer entered the password for this level incorrectly.
+> Maybe it was just a typo and the right screen still exists?
+
+The password we got from level #1 was "thr3e" which is a typo for "three" I entered it and got to level #3.
+
+
+### Challenge $3:
+
+> Find the number of bits required to represent one character in the original ASCII encoding...
+> Multiply it by 1702
+
+1 char is stored in 1 byte = 8 bits. the US-ASCII uses 7 bits per character and the 8th bit is set to 0.
+quick math in the terminal using bc:
+~~~
+$: man bc
+NAME:
+       bc - An arbitrary precision calculator language
+~~~
+
+~~~
+$: bc
+7 * 1702
+11914
+~~~
+
+the password for the next level is "11914".
 
