@@ -135,3 +135,5 @@ word combination:
 PASSWORDISTALBUT
 ~~~
 the script returns at the end the combination of those capitalized letters "PASSWORDISTALBUT", the password is "talbut".
+
+It was fun solving those challenges, and I might keep going and write another post for higher level challenges.
