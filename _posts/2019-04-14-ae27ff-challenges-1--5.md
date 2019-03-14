@@ -9,7 +9,6 @@ comments: true
 
 ## ae27ff challenges 1-5 sloutions
 
-<span class="image fit"><img src="{{ "/images/2019-3-14-16-14-51.jpg" | absolute_url }}" alt="" /></span>
 
 <p>Decided to write the sloutions i use to solve :[ae27ff](http://ae27ff.meme.tips/) challenges.</p>
 <br><br>
