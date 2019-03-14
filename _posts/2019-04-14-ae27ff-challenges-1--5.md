@@ -10,11 +10,9 @@ comments: true
 ## ae27ff challenges 1-5 sloutions
 
 
-<p>Decided to write the sloutions i used to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> challenges.
-
-> <a href="http://ae27ff.meme.tips/">ae27ff</a> is a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources.
+<p>Decided to write the sloutions i used to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> challenges.</p>
+>  <a href="http://ae27ff.meme.tips/">ae27ff</a> is a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources.
 > Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
-</p>
 <br><br>
 
 ### Challenge #1:
