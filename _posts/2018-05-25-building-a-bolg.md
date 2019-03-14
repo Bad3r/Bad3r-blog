@@ -11,7 +11,7 @@ comments: true
 
 <span class="image fit"><img src="{{ "/images/workProgress.jpg" | absolute_url }}" alt="" /></span>
 
-site was build using Jekyll read more about it : [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
+site was build using Jekyll read more about it: [how to install Jekyll](https://jekyllrb.com/). It's not too hard I promise!
 <br><br>
 thanks for checking on my progress !
 
