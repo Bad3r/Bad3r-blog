@@ -15,7 +15,7 @@ comments: true
 > Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
 <br><br>
 
-### Challenge #1:
+### Challenge #1 Introductions:
 
 > Welcome to the candidate screening process.  Throughout this test you will be confronted with puzzles that will test your competence in a wide variety of subjects.
 > Your goal is to approach each puzzle as a means to acquire a password. You should then use this password in a certain way to get to the next page.  All passwords should be entered as lowercase unless otherwise instructed.
@@ -32,7 +32,7 @@ To solve this challenge click on the site icon top left then in the "Mobile pass
 </div>
 
 
-### Challenge #2:
+### Challenge #2 Human Error:
 
 > Apologies,
 > It appears our developer entered the password for this level incorrectly.
@@ -41,7 +41,7 @@ To solve this challenge click on the site icon top left then in the "Mobile pass
 The password we got from level #1 was "thr3e" which is a typo for "three" I entered it and got to level #3.
 
 
-### Challenge #3:
+### Challenge #3 DELiberation:
 
 > Find the number of bits required to represent one character in the original ASCII encoding...
 > Multiply it by 1702
@@ -61,4 +61,15 @@ $: bc
 ~~~
 
 the password for the next level is "11914".
+
+
+### Challenge #4 Popular with spiders:
+
+> 155 141 156 151 164 157 142 141
+> ...if they counted with their legs
+
+The hint is about legs, and the title of the challenge is "Popular with spiders" a spider has 8 legs the equivalent in computing is an octet because it has 8 bits
+those numbers separated by a space are the octal values in the <a href="https://www.ascii-code.com/">ASCII table</a> where "155" = "m" and so on.
+Instead of doing it manually I used <a href="https://gchq.github.io/CyberChef/">CyperChef</a> to convert from octal to text the output was "manitoba" and now I can move on to the next level.
+
 
