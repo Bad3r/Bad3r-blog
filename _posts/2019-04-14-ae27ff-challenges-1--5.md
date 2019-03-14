@@ -48,13 +48,13 @@ The password we got from level #1 was "thr3e" which is a typo for "three" I ente
 
 1 char is stored in 1 byte = 8 bits. the US-ASCII uses 7 bits per character and the 8th bit is set to 0.
 quick math in the terminal using bc:
-~~~
+~~~ bash
 $: man bc
 NAME:
        bc - An arbitrary precision calculator language
 ~~~
 
-~~~
+~~~ bash
 $: bc
 7 * 1702
 11914
