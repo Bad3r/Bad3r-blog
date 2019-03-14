@@ -19,7 +19,7 @@ comments: true
 > Your goal is to approach each puzzle as a means to acquire a password. You should then use this password in a certain way to get to the next page.  All passwords should be entered as lowercase unless otherwise instructed.
 > To give you a head-start, the password for this screen is "start". The password for the next screen is "thr3e".  From that you should be able to Address the question of how to advance.
 <p>The password for the next level is given "thr3e", this more to make sure you understand how to navigate the site.
-To solve this challenge simply click on the site icon top left then in the "Mobile password entry:"<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> field write the password "thr3e" to proceed to the next level.</p>
+To solve this challenge click on the site icon top left then in the "Mobile password entry:"<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> field write the password "thr3e" to proceed to the next level.</p>
 
 <div class="footnotes">
   <ol>
