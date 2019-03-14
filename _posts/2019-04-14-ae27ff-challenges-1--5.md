@@ -77,8 +77,11 @@ Instead of doing it manually I used <a href="https://gchq.github.io/CyberChef/">
 ### #5 Invested Capital:
 
 > We've been getting swamped with email spam this week along with another batch of "Nigerian Prince" letters, however the boys in the IT office are telling me we should take a second look at this email in particular.
-> 
+
+
 > Let me know if you find anything interesting.
+
+
 ~~~
 Pardon me, Admirable colleague,
 
@@ -88,7 +91,9 @@ This offer is only good for a limited time.  All of the time people throw out on
 
 Thank you for your time.
 ~~~
+
 > (Do not call this phone number - it is fake)
+
 
 I wasn't sure what to do with this one, but the title sent me in the right direction. The tile is "Invested Capital" made me think it might be related to the capitalized words in the given email, so I decided its time to practice some python and write a simple script that takes in the text and returns to me the words that start with a capital letter:
 
