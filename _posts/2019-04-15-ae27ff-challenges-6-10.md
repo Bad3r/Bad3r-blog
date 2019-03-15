@@ -15,7 +15,7 @@ comments: true
 > Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
 <br><br>
 
-### #6 Defeated by brutes![Crypto]:
+### #6 Defeated by brutes! [Crypto]:
 
 > Hvs doggkcfr wg lobori
 
@@ -161,3 +161,4 @@ and a word showed up on the screen "rosebud" and what do you know its the passwo
 Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp (Colors → Map → Set Color Map) or by editing the data directly (change bytes 13, 14 and 15 of the file from 000000 to ffffff).
 
 <span class="image fit"><img src="{{ "/images/boil-solved.jpg" | absolute_url }}" alt="" /></span>
+
