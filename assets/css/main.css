@@ -1772,7 +1772,7 @@
 	}
 
 	code {
-		border: solid 2px;
+		border: solid 1px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		/* code block size */
