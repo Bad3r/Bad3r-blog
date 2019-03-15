@@ -78,18 +78,13 @@ Output: The next level is horrible. It really is. Really. I mean... that's the p
 
 found the password for the next level "horrible" bring it on.
 
-### #8 DELiberation:
+### #8 Last-minute calculations [Math,Unknown]:
 
-> Find the number of bits required to represent one character in the original ASCII encoding...
-> Multiply it by 1702
+> It seems that one of our developers has been helping candidates cheat on the test; seems it was a mistake to transfer him from Finance. We found the following note being passed, but we don't know what it means.
+> 
+> Maybe you could figure it out for us?
+<span class="image fit"><img src="{{ "/images/horrible.jpg" | absolute_url }}" alt="" /></span>
 
-1 char is stored in 1 byte = 8 bits. the US-ASCII uses 7 bits per character and the 8th bit is set to 0.
-quick math in the terminal using bc:
-~~~ bash
-$: man bc
-NAME:
-       bc - An arbitrary precision calculator language
-~~~
 
 ~~~ bash
 $: bc
