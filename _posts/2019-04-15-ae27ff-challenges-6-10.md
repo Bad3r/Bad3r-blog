@@ -98,6 +98,8 @@ For details type `warranty'.
 ~~~
 the calulated number is 7108 there is a hint in the picture that says "flip!" becasue this is a math problem and the output is an integer i remembered how you can spell words in a calculator but i didn't have one next to me so i wrote a python script that takes in a number and gets the letters quivelent to the digits and flips it:
 ~~~ python
+#! /usr/bin/python3
+'''
 It's known that when digital digits are looked at upside down they resemble an English letter.
 this script given a number it will convert it to English letters using the calculation:
 Number  	 Letter
@@ -182,7 +184,6 @@ Instead of doing it manually I used <a href="https://gchq.github.io/CyberChef/">
 
 
 I wasn't sure what to do with this one, but the title sent me in the right direction. The tile is "Invested Capital" made me think it might be related to the capitalized words in the given email, so I decided its time to practice some python and write a simple script that takes in the text and returns to me the words that start with a capital letter:
-
 ~~~ python
 #! /usr/bin/python3
 # script that prompts for a file  and return the words that start with 
