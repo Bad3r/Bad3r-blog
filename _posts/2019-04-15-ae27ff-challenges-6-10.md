@@ -2,46 +2,43 @@
 layout: post
 title:  "ae27ff wargame challenges 1-5 sloutions"
 date:   2019-04-14
-excerpt: "a writeup of how to solve ae27ff wargame challenges 1-5"
-image: "/images/2019-3-14-16-14-51.jpg"
+excerpt: "a writeup of how to solve ae27ff wargame challenges 6-10"
+image: "/images/2019-3-15-4-46-23.jpg"
 comments: true
 ---
 
-## ae27ff wargame challenges 1-5 solutions
+## ae27ff  wargame challenges 6-10 sloutions
 
 
-<p>Decided to write the solutions i used to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> wargame challenges.</p>
+<p>Decided to write the sloutions i used to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> wargame challenges.</p>
 >  <a href="http://ae27ff.meme.tips/">ae27ff</a> is a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources.
 > Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
 <br><br>
 
-### #1 Introductions [Basics]:
+### #6 Defeated by brutes![Crypto]:
 
-> Welcome to the candidate screening process.  Throughout this test you will be confronted with puzzles that will test your competence in a wide variety of subjects.
-> Your goal is to approach each puzzle as a means to acquire a password. You should then use this password in a certain way to get to the next page.  All passwords should be entered as lowercase unless otherwise instructed.
-> To give you a head-start, the password for this screen is "start". The password for the next screen is "thr3e".  From that you should be able to Address the question of how to advance.
-<p>The password for the next level is given "thr3e", this more to make sure you understand how to navigate the site.
-To solve this challenge click on the site icon top left then in the "Mobile password entry:"<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> field write the password "thr3e" to proceed to the next level.</p>
+> Hvs doggkcfr wg lobori
 
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p> note that the password field is case sensitive. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+From the challenge name this is a crypto challenge, so first i googled it and found <a href="http://hot-cross--puns.tumblr.com/post/132751979982/parsing-code-caesarshift-key-12">a post on tumblr</a> where someone decrypted a string that contains the word "doggkcfr" with ROT12 therefore i decided to try to decrypt my string using ROT12 with href="https://gchq.github.io/CyberChef/">CyperChef</a> and got:
+~~~
+Input:  Hvs doggkcfr wg lobori
+Recipe: ROT12
+Output: The password is xanadu
+~~~
+to level 7!.
 
+### #7 xanadu[Crypto]:
 
-### #2 Human Error [Basics]:
+> Qhr nhrq lrvhf fs uoulfbye. Ln oenlos fs. Eedfiy. V mhuk... tuaw'm qhr pdmpwbrg: blreiefb
+> 
+> The key has already been given to you.
 
-> Apologies,
-> It appears our developer entered the password for this level incorrectly.
-> Maybe it was just a typo and the right screen still exists?
+Another crypto challenge I started with looking up the title "xanadu" and found the wikipedia page on <a href="https://en.wikipedia.org/wiki/Project_Xanadu">project Xanadu</a>:
+> Project Xanadu was the first hypertext project, founded in 1960 by Ted Nelson. Administrators of Project Xanadu have declared it an improvement over the World Wide Web, with mission statement: "Today's popular software simulates paper. The World Wide Web (another imitation of paper) trivialises our original hypertext model with one-way ever-breaking links and no management of version or contents."[1]
+> 
+> Wired magazine published an article called "The Curse of Xanadu", calling Project Xanadu "the longest-running vaporware story in the history of the computer industry".[2] The first attempt at implementation began in 1960, but it was not until 1998 that an incomplete implementation was released. A version described as "a working deliverable", OpenXanadu, was made available in 2014. 
 
-The password we got from level #1 was "thr3e" which is a typo for "three" I entered it and got to level #3.
-
-
-### #3 DELiberation [Research]:
+### #3 DELiberation:
 
 > Find the number of bits required to represent one character in the original ASCII encoding...
 > Multiply it by 1702
@@ -63,7 +60,7 @@ $: bc
 the password for the next level is "11914".
 
 
-### #4 Popular with spiders [Data]:
+### #4 Popular with spiders:
 
 > 155 141 156 151 164 157 142 141
 > 
@@ -74,7 +71,7 @@ those numbers separated by a space are the octal values in the <a href="https://
 Instead of doing it manually I used <a href="https://gchq.github.io/CyberChef/">CyperChef</a> to convert from octal to text the output was "manitoba" and now I can move on to the next level.
 
 
-### #5 Invested Capital [Examination]:
+### #5 Invested Capital:
 
 > We've been getting swamped with email spam this week along with another batch of "Nigerian Prince" letters, however the boys in the IT office are telling me we should take a second look at this email in particular.
 > Let me know if you find anything interesting.
