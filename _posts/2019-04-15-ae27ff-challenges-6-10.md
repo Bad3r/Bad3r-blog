@@ -153,12 +153,12 @@ The output is "b(d/o)il" the 2nd letter could be either 'd' or 'o' if it's 'o' t
 
 ### #9 Darkest darkness [Steg]:
 
-> <span class="image fit"><img src="{{ "/images/boil.jpg" | absolute_url }}" alt="" /></span>
+> <span class="image fit"><img src="{{ "/images/boil.png" | absolute_url }}" alt="" /></span>
 
 All you get for this challenge is a black picture, and the title is "Darkest darkness" made me think that all I have to do is reset the color table; therefore, I opened Gimp and loaded the picture after that from the menu at the top:
 Colors --> Auto --> equalize
 and a word showed up on the screen "rosebud" and what do you know its the password for the next level :).
 Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp (Colors → Map → Set Color Map) or by editing the data directly (change bytes 13, 14 and 15 of the file from 000000 to ffffff).
 
-<span class="image fit"><img src="{{ "/images/boil-solved.jpg" | absolute_url }}" alt="" /></span>
+<span class="image fit"><img src="{{ "/images/boil-solved.png" | absolute_url }}" alt="" /></span>
 
