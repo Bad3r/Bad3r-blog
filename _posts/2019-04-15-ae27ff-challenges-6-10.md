@@ -85,14 +85,71 @@ found the password for the next level "horrible" bring it on.
 > Maybe you could figure it out for us?
 <span class="image fit"><img src="{{ "/images/horrible.jpg" | absolute_url }}" alt="" /></span>
 
+This is a math problem so I started by using bc:
+~~~
+┌ ~
+└> % bc                                                                                       8:54:42
+bc 1.07.1
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006, 2008, 2012-2017 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+(2 * 3922138 - 18368) / 1101
+7108
+~~~
+the calulated number is 7108 there is a hint in the picture that says "flip!" becasue this is a math problem and the output is an integer i remembered how you can spell words in a calculator but i didn't have one next to me so i wrote a python script that takes in a number and gets the letters quivelent to the digits and flips it:
+~~~ python
+It's known that when digital digits are looked at upside down they resemble an English letter.
+this script given a number it will convert it to English letters using the calculation:
+Number  	 Letter
+0       	 O/D
+1       	 l
+2       	 Z
+3       	 E
+4       	 h
+5       	 S
+6       	 g
+7       	 L
+8       	 B
+9       	 G
+example : 
+    number  = 77345
+    letters = LLESH
+    word    = SHELL
+'''
 
-~~~ bash
-$: bc
-7 * 1702
-11914
+
+
+def getLetters(st):
+    dict = {0: ')O/D(', 1: 'I', 2: 'Z', 3: 'E', 4: 'H', 5: 'S', 6: 'G', 7: 'L', 8: 'B', 9: 'G'}
+
+    letters = ""
+    for num in map(int, st):
+        letters += dict[num]
+
+    return letters
+
+
+def main():
+    print("Enter a number:")
+    letters = getLetters(input().strip())
+
+    print("word = " + letters[::-1].lower())
+
+
+if __name__ == '__main__':
+    main()
 ~~~
 
-the password for the next level is "11914".
+then I ran the script:
+~~~ bash
+┌ ~
+└> % python3 ./numToStringCalculator.py                                                       9:00:33
+Enter a number:
+7108
+word = b(d/o)il
+~~~
+
+The output is "b(d/o)il" the 2nd letter could be either 'd' or 'o' if it's 'o' the word would be "boil" tested it out and that was the password.
 
 
 ### #4 Popular with spiders:
