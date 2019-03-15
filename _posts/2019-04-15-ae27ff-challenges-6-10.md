@@ -41,7 +41,7 @@ Another crypto challenge I started with looking up the title "xanadu" and found 
 While it was a fun read, it didn't help much though maybe there is a reference am missing. The given string seems to be an encrypted alphabetic text similar to Caesar cipher, but there are a password and it's given to us. At first, I thought the password was "blreiefb" because of the common format "text/email: password" and ended up wasting time then decided to make sure what kind of encryption is used and a found a handy tool called <a href="https://github.com/nccgroup/featherduster">FeatherDuster</a>:
 > FeatherDuster is a tool for breaking crypto; It tries to make the process of identifying and exploiting weak cryptosystems as easy as possible. Cryptanalib is the moving parts behind FeatherDuster, and can be used independently of FeatherDuster.
 
- and decided to give it a try:
+ and decided to give it a try :
 ~~~
 $: featherduster xanadu.txt                                                      (master|…) 6:38:34
 Welcome to FeatherDuster!
