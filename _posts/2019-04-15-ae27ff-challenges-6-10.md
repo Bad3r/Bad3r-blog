@@ -96,7 +96,7 @@ For details type `warranty'.
 (2 * 3922138 - 18368) / 1101
 7108
 ~~~
-the calulated number is 7108 there is a hint in the picture that says "flip!" becasue this is a math problem and the output is an integer i remembered how you can spell words in a calculator but i didn't have one next to me so i wrote a python script that takes in a number and gets the letters quivelent to the digits and flips it:
+the calculated number is 7108 there is a hint in the picture that says “flip!” because this is a math problem, and the output is an integer I remembered how you could spell words in a calculator, but I didn’t have one next to me, so I wrote a python script that takes in a number and gets the letters equivalent to the digits and flips it:
 ~~~ python
 #! /usr/bin/python3
 '''
@@ -128,7 +128,6 @@ def getLetters(st):
 
     return letters
 
-
 def main():
     print("Enter a number:")
     letters = getLetters(input().strip())
@@ -152,78 +151,13 @@ word = b(d/o)il
 The output is "b(d/o)il" the 2nd letter could be either 'd' or 'o' if it's 'o' the word would be "boil" tested it out and that was the password.
 
 
-### #4 Popular with spiders:
+### #9 Darkest darkness [Steg]:
 
-> 155 141 156 151 164 157 142 141
-> 
-> ...if they counted with their legs
+> <span class="image fit"><img src="{{ "/images/boil.jpg" | absolute_url }}" alt="" /></span>
 
-The hint is about legs, and the title of the challenge is "Popular with spiders" a spider has 8 legs the equivalent in computing is an octet because it has 8 bits
-those numbers separated by a space are the octal values in the <a href="https://www.ascii-code.com/">ASCII table</a> where "155" = "m" and so on.
-Instead of doing it manually I used <a href="https://gchq.github.io/CyberChef/">CyperChef</a> to convert from octal to text the output was "manitoba" and now I can move on to the next level.
+All you get for this challenge is a black picture, and the title is "Darkest darkness" made me think that all I have to do is reset the color table; therefore, I opened Gimp and loaded the picture after that from the menu at the top:
+Colors --> Auto --> equalize
+and a word showed up on the screen "rosebud" and what do you know its the password for the next level :).
+Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp (Colors → Map → Set Color Map) or by editing the data directly (change bytes 13, 14 and 15 of the file from 000000 to ffffff).
 
-
-### #5 Invested Capital:
-
-> We've been getting swamped with email spam this week along with another batch of "Nigerian Prince" letters, however the boys in the IT office are telling me we should take a second look at this email in particular.
-> Let me know if you find anything interesting.
-> >Pardon me, Admirable colleague,
-> >
-> >Suppose that you had enough money for life, Some might call me crazy - Who is to say whether that is actually the case but you yourself? on the Other hand
-> >i am ready to make you a substantial *offer*. Regarding this offer, you only need to call 555-121-1709 and arrange a one-time payment and in 6-8 months
-> >receive a substantial payout that will last you a lifetime. Don't you think it is time to fight for yourself? It is! So don't sit there sorry for yourself, call now!
-> >
-> >This offer is only good for a limited time.  All of the time people throw out one of the best offers - Little do they know what they are missing; Because it
-> >looks like spam. Unless you're already rich, you'd be crazy not to take this offer!
-> >
-> >Thank you for your time.
-> 
-> (Do not call this phone number - it is fake)
-
-
-I wasn't sure what to do with this one, but the title sent me in the right direction. The tile is "Invested Capital" made me think it might be related to the capitalized words in the given email, so I decided its time to practice some python and write a simple script that takes in the text and returns to me the words that start with a capital letter:
-~~~ python
-#! /usr/bin/python3
-# script that prompts for a file  and return the words that start with 
-# a capital letter in the given file.
-
-def processString(str):
-
-    words = str.split()
-    lst = []
-    output = ""
-    for word in words:
-        if word[0].isupper():
-            lst.append(word)
-            output += word[0]
-    print("list of words that start with a capital letter:")
-    print(lst)
-
-    print("word combination:")
-    print(output)
-
-def main():
-    print ("Enter a file name:")
-    file = open('' + input().strip(), 'r')
-    str = file.read()
-    processString(str)
-    file.close()
-
-
-
-main()
-~~~
-
-I saved the email into a text file and ran the scipt:
-~~~
-$: python3 ./capital-letter-detect.py
-Enter file name:
-email.txt
-list of words that start with a capital letter:
-['Pardon', 'Admirable', 'Suppose', 'Some', 'Who', 'Other', 'Regarding', "Don't", 'It', 'So', 'This', 'All', 'Little', 'Because', 'Unless', 'Thank']
-word combination:
-PASSWORDISTALBUT
-~~~
-the script returns at the end the combination of those capitalized letters "PASSWORDISTALBUT", the password is "talbut".
-
-It was fun solving those challenges, and I might keep going and write another post for higher level challenges.
+<span class="image fit"><img src="{{ "/images/boil-solved.jpg" | absolute_url }}" alt="" /></span>
