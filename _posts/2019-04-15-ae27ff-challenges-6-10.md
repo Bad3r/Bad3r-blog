@@ -27,7 +27,7 @@ Output: The password is xanadu
 ~~~
 to level 7!.
 
-### #7 xanadu[Crypto]:
+### #7 xanadu [Crypto]:
 
 > Qhr nhrq lrvhf fs uoulfbye. Ln oenlos fs. Eedfiy. V mhuk... tuaw'm qhr pdmpwbrg: blreiefb
 > 
@@ -69,7 +69,7 @@ FeatherDuster> analyze
    many_time_pad        - A statistical attack against keystream reuse in various stream ciphers, and the one-time pad.
    vigenere             - A module to break vigenere ciphers using index of coincidence for key length detection and frequency analysis.
 ~~~ 
-I did not really need to use the tool but, it confirmed that the encryption used is <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère cipher</a> so I went back to href="https://gchq.github.io/CyberChef/">CyperChef</a> and used <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Decode</a> and tried with the passphrase "blreiefb" but it was wrong my second guess was the name of the challenge "xanadu":
+I did not really need to use the tool but, it confirmed that the encryption used is <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère cipher</a> so I went back to <a href="https://gchq.github.io/CyberChef/">CyperChef</a> and used <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Decode</a> and tried with the passphrase "blreiefb" but it was wrong my second guess was the name of the challenge "xanadu":
 ~~~
 Input: Qhr nhrq lrvhf fs uoulfbye. Ln oenlos fs. Eedfiy. V mhuk... tuaw'm qhr pdmpwbrg: blreiefb
 Recipe: Vigenère Decode, Key = "xanadu"
@@ -78,7 +78,7 @@ Output: The next level is horrible. It really is. Really. I mean... that's the p
 
 found the password for the next level "horrible" bring it on.
 
-### #3 DELiberation:
+### #8 DELiberation:
 
 > Find the number of bits required to represent one character in the original ASCII encoding...
 > Multiply it by 1702
