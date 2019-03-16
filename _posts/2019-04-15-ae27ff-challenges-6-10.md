@@ -267,7 +267,7 @@ AuFGZVDv   B3zJNaCV   EcVM7uxx
 where each one of those could be a valid resource example:
 http://pastebin.com/jGJuVGiK
 
-the script test each URL and if its valid it will save the data from ito into 
+the script test each URL and if its valid it will save the data to
 the output file ./pastebinResoults.txt
 
 '''
