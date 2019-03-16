@@ -188,7 +188,9 @@ The output is "b(d/o)il" the 2nd letter could be either 'd' or 'o' if it's 'o' t
 > <span class="image fit"><img src="{{ "/images/boil.png" | absolute_url }}" alt="" /></span>
 
 All you get for this challenge is a black picture, and the title is "Darkest darkness" made me think that all I have to do is reset the color table; therefore, I opened Gimp and loaded the picture after that from the menu at the top:
+
 Colors --> Auto --> equalize
+
 and a word showed up on the screen "rosebud" and what do you know its the password for the next level :).
 Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp (Colors → Map → Set Color Map) or by editing the data directly (change bytes 13, 14 and 15 of the file from 000000 to ffffff).
 
@@ -226,6 +228,7 @@ how is the information on the page arranged? what terms describe this arrangemen
 Remember that you can find tips here: http://pastebin.com/Ttgin2vM (from login page)
 ~~~
 the pastebin leads to the wargame rules/tools page but on pastebin which made me notice the resource on the pastebin url "Ttgin2vM" that looks like the strings given to us in the challenge. and the hint mentions how the given data is arranged also given from the hint "c2 r5" thats column2 and raw5 in the matrix == "jGJuVGiK".
+
 next i went to https://pastebin.com/jGJuVGiK and found:
 ~~~
     6F 66 20 74 68 65 20 73 70 65 63 69 65 73 20 52 61 6E 67 69 66 65 72 20 74 61 72 61 6E 64 75 73
