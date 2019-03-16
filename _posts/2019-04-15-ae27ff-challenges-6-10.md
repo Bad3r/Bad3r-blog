@@ -210,8 +210,7 @@ Note that there is other ways to solve this you can retrieve the message by rest
 > muMDb92e   wd6UZvtG   Xcdx25Mv
 > AuFGZVDv   B3zJNaCV   EcVM7uxx
 
-Some random strings not much to go by. the title is "Resource Locator" and it's a web challenge which made me think of URL (Uniform Resource Locator) and that was the first hint.
-Decided to check the web page HTML using the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">inspect element tool</a> and found the second hint:
+Some random strings, not much to go by. The title is “Resource Locator,” and it’s a web challenge which made me think of URL (Uniform Resource Locator) and that was the first hint. Decided to check the web page HTML using the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">inspect element tool</a> and found the second hint:
 ~~~ html
 <!--c2 r5   ->   Pbin-->
 <!--
@@ -221,13 +220,13 @@ optional hint:
 150 157 167 40 151 163 40 164 150 145 40 151 156 146 157 162 155 141 164 151 157 156 40 157 156 40 164 150 145 40 160 141 147 145 40 141 162 162 141 156 147 145 144 77 40 167 150 141 164 40 164 145 162 155 163 40 144 145 163 143 162 151 142 145 40 164 150 151 163 40 141 162 162 141 156 147 145 155 145 156 164 77 40 144 157 145 163 40 164 150 141 164 40 143 157 162 162 145 163 160 157 156 144 40 164 157 40 171 157 165 162 40 150 151 156 164 77 12 122 145 155 145 155 142 145 162 40 164 150 141 164 40 171 157 165 40 143 141 156 40 146 151 156 144 40 164 151 160 163 40 150 145 162 145 72 40 150 164 164 160 72 57 57 160 141 163 164 145 142 151 156 56 143 157 155 57 124 164 147 151 156 62 166 115 40 50 146 162 157 155 40 154 157 147 151 156 40 160 141 147 145 51
 -->
 ~~~
-the important thing to note here is that two hints are given above; the hint and the optional hint.
+The critical thing to note here is that two hints are given above; the hint and the optional hint.
 Started with decoding the optional hint using <a href="https://gchq.github.io/CyberChef/">CyperChef</a> it looked like octal data format when converted I got:
 ~~~
 how is the information on the page arranged? what terms describe this arrangement? does that correspond to your hint?
 Remember that you can find tips here: http://pastebin.com/Ttgin2vM (from login page)
 ~~~
-the pastebin leads to the wargame rules/tools page but on pastebin which made me notice the resource on the pastebin url "Ttgin2vM" that looks like the strings given to us in the challenge. and the hint mentions how the given data is arranged also given from the hint "c2 r5" thats column2 and raw5 in the matrix == "jGJuVGiK".
+The pastebin leads to the wargame rules/tools page but on pastebin which made me notice the resource on the pastebin URL “Ttgin2vM” that looks like the strings given to us in the challenge. And the hint mentions how the given data is arranged also given from the hint “c2 r5” that's column2 and raw5 in the matrix == “jGJuVGiK”.
 
 next i went to https://pastebin.com/jGJuVGiK and found:
 ~~~
@@ -241,7 +240,7 @@ I googled "Rangifer tarandus" and it's another name for "reindeer" and that was 
 
 ### #10 Bonus achievement (Leave No Stone Unturned): 
 
-I decided to test the rest of the resources in challenge #10 but instead of doing it manually I wrote a script that takes in the data and test each resource and if its valid then it will save the data from the pastebin into a test file:
+I decided to test the rest of the resources in challenge #10, but instead of doing it manually I wrote a script that takes in the data and test each resource and if it's valid then it will save the data from the pastebin into a test file:
 ~~~ python
 import io
 import urllib.request
@@ -411,4 +410,5 @@ The first link is the sloution for challenge #10 but the second link contains a 
 With some googling Found that this is a quote by virgil tried that as a passphrase "virgil" and unlocked the achievement "Leave No Stone Unturned".
 
  > This was not the answer, however you've unlocked an achievement:
+ >
  > Leave No Stone Unturned
