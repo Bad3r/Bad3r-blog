@@ -118,6 +118,21 @@ example :
     letters = LLESH
     word    = SHELL
 '''
+info = "\n" \
+    " ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  \n" \
+    "▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒\n" \
+    "▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒\n" \
+    "▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  \n" \
+    "░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒\n" \
+    "░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░\n" \
+    "▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░\n" \
+    " ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ \n" \
+    " ░            ░  ░   ░       ░  ░   ░     \n" \
+    "      ░            ░                      \n" \
+    " Github : https://github.com/bd3r         \n" \
+    " Twitter: https://twitter.com/bd3r_       \n" \
+    " Site   : https://bad3r.xyz/              \n"
+
 
 def getLetters(st):
     dict = {0: ')O/D(', 1: 'I', 2: 'Z', 3: 'E', 4: 'H', 5: 'S', 6: 'G', 7: 'L', 8: 'B', 9: 'G'}
@@ -129,6 +144,7 @@ def getLetters(st):
     return letters
 
 def main():
+    print(info)
     print("Enter a number:")
     letters = getLetters(input().strip())
 
@@ -142,7 +158,23 @@ if __name__ == '__main__':
 then I ran the script:
 ~~~ bash
 ┌ ~
-└> % python3 ./numToStringCalculator.py                                                       9:00:33
+└> % python3 ./numToStringCalculator.py  
+
+ ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  
+▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
+▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒
+▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
+░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒
+░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
+▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
+ ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ 
+ ░            ░  ░   ░       ░  ░   ░     
+      ░            ░                      
+ Github : https://github.com/bd3r         
+ Twitter: https://twitter.com/bd3r_       
+ Site   : https://bad3r.xyz/              
+
+
 Enter a number:
 7108
 word = b(d/o)il
@@ -162,3 +194,215 @@ Note that there is other ways to solve this you can retrieve the message by rest
 
 <span class="image fit"><img src="{{ "/images/boil-solved.png" | absolute_url }}" alt="" /></span>
 
+### #10 Resource Locator [Web]:
+
+> WhA7h8Qw   Q4USYkzu   PhVM3EzQ
+> LDeRGXQL   L7NYT5a8   KtvBT5uZ
+> GWsMqMzu   8JPtM9a3   hgcBHHWf
+> Tk5rSPdj   eB44EE74   2uwUxyMK
+> UyjHFuLP   jGJuVGiK   JMFpnqB7
+> Kfdew6kp   ECfMJt4E   HFdwhM9T
+> 7vDsdaNP   V2fEJ3Wu   YYbbiB2e
+> 8GrEu7mH   k67HHw7d   aKbVhkaz
+> pyWfzjBk   tTwnNqMR   7mF48BCT
+> muMDb92e   wd6UZvtG   Xcdx25Mv
+> AuFGZVDv   B3zJNaCV   EcVM7uxx
+
+Some random strings not much to go by. the title is "Resource Locator" and it's a web challenge which made me think of URL (Uniform Resource Locator) and that was the first hint.
+Decided to check the web page HTML using the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">inspect element tool</a> and found the second hint:
+~~~ html
+<!--c2 r5   ->   Pbin-->
+<!--
+
+optional hint:
+
+150 157 167 40 151 163 40 164 150 145 40 151 156 146 157 162 155 141 164 151 157 156 40 157 156 40 164 150 145 40 160 141 147 145 40 141 162 162 141 156 147 145 144 77 40 167 150 141 164 40 164 145 162 155 163 40 144 145 163 143 162 151 142 145 40 164 150 151 163 40 141 162 162 141 156 147 145 155 145 156 164 77 40 144 157 145 163 40 164 150 141 164 40 143 157 162 162 145 163 160 157 156 144 40 164 157 40 171 157 165 162 40 150 151 156 164 77 12 122 145 155 145 155 142 145 162 40 164 150 141 164 40 171 157 165 40 143 141 156 40 146 151 156 144 40 164 151 160 163 40 150 145 162 145 72 40 150 164 164 160 72 57 57 160 141 163 164 145 142 151 156 56 143 157 155 57 124 164 147 151 156 62 166 115 40 50 146 162 157 155 40 154 157 147 151 156 40 160 141 147 145 51
+-->
+~~~
+the important thing to note here is that two hints are given above; the hint and the optional hint.
+Started with decoding the optional hint using <a href="https://gchq.github.io/CyberChef/">CyperChef</a> it looked like octal data format when converted I got:
+~~~
+how is the information on the page arranged? what terms describe this arrangement? does that correspond to your hint?
+Remember that you can find tips here: http://pastebin.com/Ttgin2vM (from login page)
+~~~
+the pastebin leads to the wargame rules/tools page but on pastebin which made me notice the resource on the pastebin url "Ttgin2vM" that looks like the strings given to us in the challenge. and the hint mentions how the given data is arranged also given from the hint "c2 r5" thats column2 and raw5 in the matrix == "jGJuVGiK".
+next i went to https://pastebin.com/jGJuVGiK and found:
+~~~
+    6F 66 20 74 68 65 20 73 70 65 63 69 65 73 20 52 61 6E 67 69 66 65 72 20 74 61 72 61 6E 64 75 73
+~~~
+That looked like a hex code to me so I converted it in <a href="https://gchq.github.io/CyberChef/">CyperChef</a>:
+~~~
+of the species Rangifer tarandus
+~~~
+I googled "Rangifer tarandus" and it's another name for "reindeer" and that was the password for this level.
+
+### #10 Bonus achievement (Leave No Stone Unturned): 
+
+I decided to test the rest of the resources in challenge #10 but instead of doing it manually I wrote a script that takes in the data and test each resource and if its valid then it will save the data from the pastebin into a test file:
+~~~ python
+import io
+import urllib.request
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import gzip
+
+
+'''
+
+script that takes in a matrix of resources for pastebin.com example:
+WhA7h8Qw   Q4USYkzu   PhVM3EzQ
+LDeRGXQL   L7NYT5a8   KtvBT5uZ
+GWsMqMzu   8JPtM9a3   hgcBHHWf
+Tk5rSPdj   eB44EE74   2uwUxyMK
+UyjHFuLP   jGJuVGiK   JMFpnqB7
+Kfdew6kp   ECfMJt4E   HFdwhM9T
+7vDsdaNP   V2fEJ3Wu   YYbbiB2e
+8GrEu7mH   k67HHw7d   aKbVhkaz
+pyWfzjBk   tTwnNqMR   7mF48BCT
+muMDb92e   wd6UZvtG   Xcdx25Mv
+AuFGZVDv   B3zJNaCV   EcVM7uxx
+
+where each one of those could be a valid resource example:
+http://pastebin.com/jGJuVGiK
+
+the script test each URL and if its valid it will save the data from ito into the output file ./pastebinResoults.txt
+
+'''
+info = "\n" \
+    " ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  \n" \
+    "▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒\n" \
+    "▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒\n" \
+    "▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  \n" \
+    "░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒\n" \
+    "░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░\n" \
+    "▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░\n" \
+    " ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ \n" \
+    " ░            ░  ░   ░       ░  ░   ░     \n" \
+    "      ░            ░                      \n" \
+    " Github : https://github.com/bd3r         \n" \
+    " Twitter: https://twitter.com/bd3r_       \n" \
+    " Site   : https://bad3r.xyz/              \n"
+
+
+def fetch_page(page):
+    response = ""
+    try:
+        response = urlopen(page)
+        if response.info().get('Content-Encoding') == 'gzip':
+            response_buffer = io.StringIO(response.read())
+            unzipped_content = gzip.GzipFile(fileobj=response_buffer)
+            parsed_html = BeautifulSoup(unzipped_content.read(), "html.parser")
+
+            return str(parsed_html)
+        else:
+            parsed_html = BeautifulSoup(response.read(), "html.parser")
+            return str(parsed_html)
+
+    except urllib.error.URLError:
+        return response
+
+
+def main():
+    print(info)
+    print("Enter file name:")
+    fp = open(input().strip(), 'r')
+    data = fp.read()
+    resources = data.split()
+    raw_url = 'http://pastebin.com/raw/'
+    output = open('pastebinResults.txt', 'w+')
+
+    print("Output will be saved to the file ./pastebinResults.txt")
+
+    for res in resources:
+        print("testing URL: " + raw_url + res)
+        url = raw_url + res
+        txt = fetch_page(url)
+        if len(txt) > 0:
+            output.write("####################################################################\n")
+            output.write('URL: ' + url + '\n')
+            output.write("####################################################################\n")
+            output.write(txt + '\n')
+
+    print("Done!")
+    fp.close()
+    output.close()
+    with open('pastebinResults.txt', 'r') as out:
+        print(out.read())
+
+if __name__ == '__main__':
+    main()
+~~~
+ran the script with the given data:
+~~~ bash
+┌ ~
+└> % python3 ./pastebinResourceLocator.py    
+
+ ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  
+▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
+▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒
+▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
+░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒
+░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
+▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
+ ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ 
+ ░            ░  ░   ░       ░  ░   ░     
+      ░            ░                      
+ Github : https://github.com/bd3r         
+ Twitter: https://twitter.com/bd3r_       
+ Site   : https://bad3r.xyz/              
+
+Enter file name:
+resources
+Output will be saved to the file ./pastebinResults.txt
+testing URL: http://pastebin.com/raw/WhA7h8Qw
+testing URL: http://pastebin.com/raw/Q4USYkzu
+testing URL: http://pastebin.com/raw/PhVM3EzQ
+testing URL: http://pastebin.com/raw/LDeRGXQL
+testing URL: http://pastebin.com/raw/L7NYT5a8
+testing URL: http://pastebin.com/raw/KtvBT5uZ
+testing URL: http://pastebin.com/raw/GWsMqMzu
+testing URL: http://pastebin.com/raw/8JPtM9a3
+testing URL: http://pastebin.com/raw/hgcBHHWf
+testing URL: http://pastebin.com/raw/Tk5rSPdj
+testing URL: http://pastebin.com/raw/eB44EE74
+testing URL: http://pastebin.com/raw/2uwUxyMK
+testing URL: http://pastebin.com/raw/UyjHFuLP
+testing URL: http://pastebin.com/raw/jGJuVGiK
+testing URL: http://pastebin.com/raw/JMFpnqB7
+testing URL: http://pastebin.com/raw/Kfdew6kp
+testing URL: http://pastebin.com/raw/ECfMJt4E
+testing URL: http://pastebin.com/raw/HFdwhM9T
+testing URL: http://pastebin.com/raw/7vDsdaNP
+testing URL: http://pastebin.com/raw/V2fEJ3Wu
+testing URL: http://pastebin.com/raw/YYbbiB2e
+testing URL: http://pastebin.com/raw/8GrEu7mH
+testing URL: http://pastebin.com/raw/k67HHw7d
+testing URL: http://pastebin.com/raw/aKbVhkaz
+testing URL: http://pastebin.com/raw/pyWfzjBk
+testing URL: http://pastebin.com/raw/tTwnNqMR
+testing URL: http://pastebin.com/raw/7mF48BCT
+testing URL: http://pastebin.com/raw/muMDb92e
+testing URL: http://pastebin.com/raw/wd6UZvtG
+testing URL: http://pastebin.com/raw/Xcdx25Mv
+testing URL: http://pastebin.com/raw/AuFGZVDv
+testing URL: http://pastebin.com/raw/B3zJNaCV
+testing URL: http://pastebin.com/raw/EcVM7uxx
+Done!
+####################################################################
+URL: http://pastebin.com/raw/jGJuVGiK
+####################################################################
+6F 66 20 74 68 65 20 73 70 65 63 69 65 73 20 52 61 6E 67 69 66 65 72 20 74 61 72 61 6E 64 75 73
+####################################################################
+URL: http://pastebin.com/raw/YYbbiB2e
+####################################################################
+Death twitches my ear;
+'Live,' he says...
+'I'm coming.'
+~~~
+The first link is the sloution for challenge #10 but the second link contains a quote:
+
+> Death twitches my ear;
+> 'Live,' he says...
+> 'I'm coming.'
+
+With some googling Found that this is a quote by virgil tried that as a passphrase "virgil" and unlocked the achievement "Leave No Stone Unturned".
