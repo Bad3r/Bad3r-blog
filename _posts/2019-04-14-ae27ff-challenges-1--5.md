@@ -3,7 +3,7 @@ layout: post
 title:  "ae27ff wargame challenges 1-5 sloutions"
 date:   2019-04-14
 excerpt: "a writeup of how to solve ae27ff wargame challenges 1-5"
-image: "/images/2019-3-14-16-14-51.jpg"
+image: "/images/1to5.jpg"
 comments: true
 ---
 
