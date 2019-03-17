@@ -4,7 +4,9 @@ title:  "ae27ff wargame challenges 1-5 sloutions"
 date:   2019-04-14
 excerpt: "a writeup of how to solve ae27ff wargame challenges 1-5"
 image: "/images/2019-3-15-4-46-23.jpg"
-comments: true
+category: writeup
+tags: [ae27ff, wargame]
+comments: false
 ---
 
 ## ae27ff wargame challenges 1-5 solutions
