@@ -68,8 +68,10 @@ FeatherDuster> analyze
    base_n_solver        - A solver for silly base-N encoding obfuscation.          
    single_byte_xor      - A brute force attack against single-byte XOR encrypted ciphertext.
    multi_byte_xor       - A brute force attack against multi-byte XOR encrypted ciphertext.
-   many_time_pad        - A statistical attack against keystream reuse in various stream ciphers, and the one-time pad.
-   vigenere             - A module to break vigenere ciphers using index of coincidence for key length detection and frequency analysis.
+   many_time_pad        - A statistical attack against keystream reuse in various stream ciphers
+                          , and the one-time pad.
+   vigenere             - A module to break vigenere ciphers using index of coincidence for
+                          key length detection and frequency analysis.
 ~~~ 
 I did not really need to use the tool but, it confirmed that the encryption used is <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère cipher</a> so I went back to <a href="https://gchq.github.io/CyberChef/">CyperChef</a> and used <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Decode</a> and tried with the passphrase "blreiefb" but it was wrong my second guess was the name of the challenge "xanadu":
 ~~~
@@ -137,7 +139,8 @@ info = "\n" \
 
 
 def getLetters(st):
-    dict = {0: ')O/D(', 1: 'I', 2: 'Z', 3: 'E', 4: 'H', 5: 'S', 6: 'G', 7: 'L', 8: 'B', 9: 'G'}
+    dict = {0: ')O/D(', 1: 'I', 2: 'Z', 3: 'E', 4: 'H', 5: 'S'
+            , 6: 'G', 7: 'L', 8: 'B', 9: 'G'}
 
     letters = ""
     for num in map(int, st):
