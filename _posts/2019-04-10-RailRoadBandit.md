@@ -103,6 +103,13 @@ am working on adding more features to the script like brute forcing the web root
 ### Ruby on Rails sensitive files
 
 there is some important files in ruby on rails that can also reveal sensitive information like:
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+
 | File | Description |
 |:-------------------------------------|:----------------------------------------=---:|
 | /config/database.yml                 | May contain production credentials           |
