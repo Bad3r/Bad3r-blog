@@ -29,10 +29,10 @@ This vulnerability is a path traversal vulnerability (<a href="https://www.owasp
 A path traversal attack (also known as directory traversal) aims to access files and directories that are stored outside the web root folder. By manipulating variables that reference files with “dot-dot-slash (../)” sequences and its variations or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system including application source code or configuration and critical system files. It should be noted that access to files is limited by system operational access control (such as in the case of locked or in-use files on the Microsoft Windows operating system).
 
 This attack is also known as “dot-dot-slash,” “directory traversal,” “directory climbing” and “backtracking.” 
-source: <a href="https://www.owasp.org/index.php/Path_Traversal">OWASP Path Traversal</a>)
+source: <a href="https://www.owasp.org/index.php/Path_Traversal">OWASP Path Traversal</a>
 
 ## reproducing:
-To demonstrate the vulnerability, i bult a Ruby on Rails site: ///url///
+To demonstrate the vulnerability, i bult a Ruby on Rails site: <a href="http://bandit.bad3r.xyz/">bandit.bad3r.xyz</a>
 you can clone my site and run it locally by installing Ruby on Rails then cloning my repo:<a href="https://github.com/Bad3r/RailroadBandit">Bad3r/RailRoadBandit</a>
 Digital Ocean has an excellent guide to get you started: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04">
 How To Install Ruby on Rails with rbenv on Ubuntu 18.04</a>
