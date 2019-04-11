@@ -36,13 +36,32 @@ To demonstrate the vulnerability, i bult a Ruby on Rails site: ///url///
 you can clone my site and run it locally by installing Ruby on Rails then cloning my repo:<a href="https://github.com/Bad3r/RailroadBandit">Bad3r/RailRoadBandit</a>
 Digital Ocean has an excellent guide to get you started: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04">
 How To Install Ruby on Rails with rbenv on Ubuntu 18.04</a>
-you can also create your demo manually by creating a controller by excuting the command
-~~~Bash
-┌ ~
-└> % railrs generate controller bandit
+you can also create your demo manually by editing the default application controller in
+
 ~~~
-the controller will be genrated in 
-> <web root folder>/app/controllers/
-then edit the route file located git 
-> <web root folder>/config/routes.rb
+<web root folder>/app/controllers/application_controller.rb
+~~~
+open the file and add a call to "render file:"
+~~~ruby
+class ApplicationController < ActionController::Base
+    def index
+        render file:  "#{Rails.root}/public/bandit/bandit.html"
+    end
+end
+~~~
+here am just rendering an html file but you can also render any text fle.then edit the route file located in 
+~~~
+<web root folder>/config/routes.rb
+~~~
+to add a route for the controller:
+~~~ruby
+Rails.application.routes.draw do
+
+      	get 'application/index' => 'application#index'
+	    root 'application#index'
+end
+~~~
+thats all you need to follow this demo. you should check if the file is rendered correctly and the route.rb config is correct.
+
+
 
