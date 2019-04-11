@@ -104,8 +104,10 @@ am working on adding more features to the script like brute forcing the web root
 there is some important files in ruby on rails that can also reveal sensitive information like
 > /config/database.yml                 
 >> May contain production credentials
+
 > /config/initializers/secret_token.rb 
 >> Contains a secret used to hash session cookie
+
 > /db/seeds.rb                         
 >> May contain seed data including bootstrap admin user
 > /db/development.sqlite3              
