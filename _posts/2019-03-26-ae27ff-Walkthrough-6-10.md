@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ae27ff wargame challenges 6-10 Walkthrough"
-date:   2019-04-14
+date:   2019-3-26
 excerpt: "a writeup of how to solve ae27ff wargame challenges 6-10"
 image: "/images/2019-3-15-4-46-23.jpg"
 category: writeup
