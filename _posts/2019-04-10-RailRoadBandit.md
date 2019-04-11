@@ -95,6 +95,7 @@ you can use one of the builtin options or give the path for the file manually
 ~~~Bash
 ../../../../../../../../../etc/passwd
 ~~~
+
  here we use ../ for directory traversal, the result is:
 <span class="image center"><img src="{{ "/images/etc_passwd.png" | absolute_url }}" alt="" /></span>
  
