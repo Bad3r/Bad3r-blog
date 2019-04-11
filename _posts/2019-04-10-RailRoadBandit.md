@@ -101,12 +101,11 @@ am working on adding more features to the script like brute forcing the web root
 
 ### Ruby on Rails sensitive files
 
-there is some important files in ruby on rails that can also reveal sensitive information like
-> /config/database.yml                 
->> May contain production credentials
-
-> /config/initializers/secret_token.rb 
->> Contains a secret used to hash session cookie
+there is some important files in ruby on rails that can also reveal sensitive information like:
+| File | Description |
+|:-------------------------------------|:----------------------------------------=---:|
+| /config/database.yml                 | May contain production credentials           |
+| /config/initializers/secret_token.rb | Contains a secret used to hash session cookie|
 
 > /db/seeds.rb                         
 >> May contain seed data including bootstrap admin user
