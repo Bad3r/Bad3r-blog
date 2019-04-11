@@ -133,7 +133,7 @@ info = "\n" \
     " ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ \n" \
     " ░            ░  ░   ░       ░  ░   ░     \n" \
     "      ░            ░                      \n" \
-    " Github : https://github.com/bd3r         \n" \
+    " Github : https://github.com/bad3r         \n" \
     " Twitter: https://twitter.com/bd3r_       \n" \
     " Site   : https://bad3r.xyz/              \n"
 
@@ -164,18 +164,8 @@ then I ran the script:
 ~~~ bash
 ┌ ~
 └> % python3 ./numToStringCalculator.py  
-
- ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  
-▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
-▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒
-▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
-░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒
-░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
-▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
- ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ 
- ░            ░  ░   ░       ░  ░   ░     
-      ░            ░                      
- Github : https://github.com/bd3r         
+      
+ Github : https://github.com/bad3r         
  Twitter: https://twitter.com/bd3r_       
  Site   : https://bad3r.xyz/              
 
@@ -277,17 +267,8 @@ the output file ./pastebinResoults.txt
 
 '''
 info = "\n" \
-    " ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  \n" \
-    "▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒\n" \
-    "▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒\n" \
-    "▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  \n" \
-    "░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒\n" \
-    "░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░\n" \
-    "▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░\n" \
-    " ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ \n" \
-    " ░            ░  ░   ░       ░  ░   ░     \n" \
-    "      ░            ░                      \n" \
-    " Github : https://github.com/bd3r         \n" \
+
+    " Github : https://github.com/bad3r         \n" \
     " Twitter: https://twitter.com/bd3r_       \n" \
     " Site   : https://bad3r.xyz/              \n"
 
@@ -345,17 +326,7 @@ ran the script with the given data:
 ┌ ~
 └> % python3 ./pastebinResourceLocator.py    
 
- ▄▄▄▄    ▄▄▄      ▓█████▄ ▓█████  ██▀███  
-▓█████▄ ▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
-▒██▒ ▄██▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒
-▒██░█▀  ░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
-░▓█  ▀█▓ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒
-░▒▓███▀▒ ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
-▒░▒   ░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
- ░    ░   ░   ▒    ░ ░  ░    ░     ░░   ░ 
- ░            ░  ░   ░       ░  ░   ░     
-      ░            ░                      
- Github : https://github.com/bd3r         
+ Github : https://github.com/bad3r         
  Twitter: https://twitter.com/bd3r_       
  Site   : https://bad3r.xyz/              
 
