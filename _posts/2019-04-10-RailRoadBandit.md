@@ -9,10 +9,8 @@ tags: [ruby, CVE,demo]
 comments: false
 ---
 
-## test test ....
-f
 
-
+## Intro:
 ## Intro:
 There is a File Content Disclosure vulnerability in Action View affecting Rails versions <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11.1.
 Specially crafted accept headers in combination with calls to '''render file: '''can cause arbitrary files on the target server to be rendered, disclosing the file contents.
@@ -56,12 +54,12 @@ here am just rendering an html file but you can also render any text fle.then ed
 to add a route for the controller:
 ~~~ruby
 Rails.application.routes.draw do
-
-      	get 'application/index' => 'application#index'
-	    root 'application#index'
+    get 'application/index' => 'application#index'
+	root 'application#index'
 end
 ~~~
 thats all you need to follow this demo. you should check if the file is rendered correctly and the route.rb config is correct.
 
+## Exploiting the vaularbility
 
 
