@@ -9,8 +9,6 @@ tags: [ruby, CVE,demo]
 comments: false
 ---
 
-# RailRoadBandit CVE-2019-5418
-
 ## Intro:
 There is a File Content Disclosure vulnerability in Action View affecting Rails versions <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11.1.
 Specially crafted accept headers in combination with calls to '''render file: '''can cause arbitrary files on the target server to be rendered, disclosing the file contents.
@@ -18,7 +16,7 @@ The impact is limited to calls to '''render''' which render file contents withou
 
 ## What is Rails?
 Ruby on Rails, or Rails, is a server-side web application framework written in Ruby that uses the model–view–controller (MVC) structure pattern, providing default structures for a database, a web service, and web pages. 
-<span class="image fit"><img src="{{ "/images/MVC.jpg" | absolute_url }}" alt="" /></span>
+<span class="image fit"><img src="{{ "/images/MVC.png" | absolute_url }}" alt="" /></span>
 
 Rails is used to build full web applications like (Basecamp, GitHub, Shopify, Airbnb, Twitch, SoundCloud, Hulu, Zendesk, Square, Cookpad.)
 
@@ -39,5 +37,8 @@ you can also create your demo manually by creating a controller by excuting the 
 ┌ ~
 └> % railrs generate controller bandit
 ~~~
-the controller will be genrated in ~~~<web root folder>/app/controllers/~~~
-then edit the route file located in
+the controller will be genrated in 
+> <web root folder>/app/controllers/
+then edit the route file located git 
+> <web root folder>/config/routes.rb
+
