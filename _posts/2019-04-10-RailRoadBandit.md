@@ -34,7 +34,7 @@ source: <a href="https://www.owasp.org/index.php/Path_Traversal">OWASP Path Trav
 ### reproducing:
 To demonstrate the vulnerability, i bult a Ruby on Rails site: <a href="http://bandit.bad3r.xyz/">bandit.bad3r.xyz</a>
 you can clone my site and run it locally by installing Ruby on Rails then cloning my repo <a href="https://github.com/Bad3r/RailroadBandit">Bad3r/RailRoadBandit</a>
-Digital Ocean has an excellent guide to get you started: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04">
+Digital Ocean has an excellent guide to get you started make sure to install a vulnerable Rails (e.g 5.2.1): <a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-18-04">
 How To Install Ruby on Rails with rbenv on Ubuntu 18.04</a>
 you can also create your demo manually by editing the default application controller in
 ~~~
@@ -95,6 +95,7 @@ you can use one of the builtin options or give the path for the file manually
 ~~~Bash
 ../../../../../../../../../etc/passwd
 ~~~
+ here we use ../ for directory traversal, the result is:
 <span class="image center"><img src="{{ "/images/etc_passwd.png" | absolute_url }}" alt="" /></span>
  
 am working on adding more features to the script like brute forcing the web root diretory name.
@@ -104,14 +105,15 @@ am working on adding more features to the script like brute forcing the web root
 
 there is some important files in ruby on rails that can also reveal sensitive information like:
 
-| File | Description |
-|:-------------------------------------|:-------------------------------------------:|
-| /config/database.yml                 | May contain production credentials           |
-| /config/initializers/secret_token.rb | Contains a secret used to hash session cookie|
+| File                                 | Description |
+|:-------------------------------------|:---------------------------------------------------:|
+| /config/database.yml                 | May contain production credentials                  |
+| /config/initializers/secret_token.rb | Contains a secret used to hash session cookie       |
+| db/seeds.rb                          | May contain seed data including bootstrap admin user|
+| /db/development.sqlite3              |May contain the SQL database                         |
 |----
 
+### Patch
 
-> /db/seeds.rb                         
->> May contain seed data including bootstrap admin user
-> /db/development.sqlite3              
->> May contain real data
+https://github.com/rails/rails/commit/f4c70c2222180b8d9d924f00af0c7fd632e26715
+<span class="image fit"><img src="{{ "/images/path_bandit.jpg" | absolute_url }}" alt="" /></span>
