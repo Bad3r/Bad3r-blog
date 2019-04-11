@@ -18,6 +18,7 @@ The impact is limited to calls to '''render''' which render file contents withou
 ## What is Rails?
 Ruby on Rails, or Rails, is a server-side web application framework written in Ruby that uses the model–view–controller (MVC) structure pattern, providing default structures for a database, a web service, and web pages. 
 <span class="image center"><img src="{{ "/images/MVC.png" | absolute_url }}" alt="" /></span>
+
 Rails is used to build full web applications like (Basecamp, GitHub, Shopify, Airbnb, Twitch, SoundCloud, Hulu, Zendesk, Square, Cookpad.)
 
 
