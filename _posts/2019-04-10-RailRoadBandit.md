@@ -9,6 +9,10 @@ tags: [ruby, CVE,demo]
 comments: false
 ---
 
+## test test ....
+f
+
+
 ## Intro:
 There is a File Content Disclosure vulnerability in Action View affecting Rails versions <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11.1.
 Specially crafted accept headers in combination with calls to '''render file: '''can cause arbitrary files on the target server to be rendered, disclosing the file contents.
