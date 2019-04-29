@@ -1,12 +1,23 @@
 ---
+excerpt: a writeup of how to solve ae27ff wargame challenges 6-10
 layout: post
-title:  "RailRoadBandit CVE-2019-5418"
-date:   2019-04-11
-excerpt: "Reproducution and demonistration of the vulnerablity"
-category: writeup
-tags: [ruby, CVE,demo]
+date: 2019-3-26
 comments: false
+title: ae27ff wargame challenges 6-10 Walkthrough
+tags:
+  - ae27ff
+  - wargame
+image: /images/2019-3-15-4-46-23.jpg
+category: writeup
 ---
+
+# ae27ff  wargame challenges 6-10 sloutions
+
+Decided to write the sloutions i used to solve [ae27ff](http://ae27ff.meme.tips/) wargame challenges.
+
+> [ae27ff](http://ae27ff.meme.tips/) is a set of levels that simulate challenges and puzzles that one may encounter during an ARG \(Alternate Reality Game\) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources. Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
+
+## \#6 Defeated by brutes! \[Crypto\]:
 
 ## Intro:
 
