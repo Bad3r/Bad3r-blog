@@ -1,50 +1,55 @@
 ---
+excerpt: a writeup of how to solve ae27ff wargame challenges 6-10
 layout: post
-title:  "ae27ff wargame challenges 6-10 Walkthrough"
-date:   2019-3-26
-excerpt: "a writeup of how to solve ae27ff wargame challenges 6-10"
-image: "/images/2019-3-15-4-46-23.jpg"
-category: writeup
-tags: [ae27ff, wargame]
+date: 2019-3-26
 comments: false
+title: ae27ff wargame challenges 6-10 Walkthrough
+tags:
+  - ae27ff
+  - wargame
+image: /images/2019-3-15-4-46-23.jpg
+category: writeup
 ---
 
-## ae27ff  wargame challenges 6-10 sloutions
+# ae27ff  wargame challenges 6-10 sloutions
 
+Decided to write the sloutions i used to solve [ae27ff](http://ae27ff.meme.tips/) wargame challenges.
 
-<p>Decided to write the sloutions i used to solve <a href="http://ae27ff.meme.tips/">ae27ff</a> wargame challenges.</p>
->  <a href="http://ae27ff.meme.tips/">ae27ff</a> is a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources.
-> Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
-<br><br>
+> [ae27ff](http://ae27ff.meme.tips/) is a set of levels that simulate challenges and puzzles that one may encounter during an ARG \(Alternate Reality Game\) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources. Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
 
-### #6 Defeated by brutes! [Crypto]:
+## \#6 Defeated by brutes! \[Crypto\]:
 
 > Hvs doggkcfr wg lobori
 
-From the challenge name this is a crypto challenge, the given string looks like it was encoded with an <a href="https://en.wikipedia.org/wiki/ROT13">ROT cipher</a> so first i googled it and found <a href="http://hot-cross--puns.tumblr.com/post/132751979982/parsing-code-caesarshift-key-12">a post on tumblr</a> where someone decrypted a string that contains the word "doggkcfr" with ROT12 therefore i decided to try to decrypt my string using ROT12 with href="https://gchq.github.io/CyberChef/">CyperChef</a> and got:
-~~~
+From the challenge name this is a crypto challenge, the given string looks like it was encoded with an [ROT cipher](https://en.wikipedia.org/wiki/ROT13) so first i googled it and found [a post on tumblr](http://hot-cross--puns.tumblr.com/post/132751979982/parsing-code-caesarshift-key-12) where someone decrypted a string that contains the word "doggkcfr" with ROT12 therefore i decided to try to decrypt my string using ROT12 with href="[https://gchq.github.io/CyberChef/"&gt;CyperChef](https://gchq.github.io/CyberChef/">CyperChef)&lt;/a&gt; and got:
+
+```text
 Input:  Hvs doggkcfr wg lobori
 Recipe: ROT12
 Output: The password is xanadu
-~~~
+```
+
 to level 7!.
 
-### #7 xanadu [Crypto]:
+## \#7 xanadu \[Crypto\]:
 
 > Qhr nhrq lrvhf fs uoulfbye. Ln oenlos fs. Eedfiy. V mhuk... tuaw'm qhr pdmpwbrg: blreiefb
-> 
+>
 > The key has already been given to you.
 
-Another crypto challenge I started with looking up the title "xanadu" and found the Wikipedia page on <a href="https://en.wikipedia.org/wiki/Project_Xanadu">project Xanadu</a>:
-> Project Xanadu was the first hypertext project, founded in 1960 by Ted Nelson. Administrators of Project Xanadu have declared it an improvement over the World Wide Web, with mission statement: "Today's popular software simulates paper. The World Wide Web (another imitation of paper) trivialises our original hypertext model with one-way ever-breaking links and no management of version or contents."[1]
-> 
-> Wired magazine published an article called "The Curse of Xanadu", calling Project Xanadu "the longest-running vaporware story in the history of the computer industry".[2] The first attempt at implementation began in 1960, but it was not until 1998 that an incomplete implementation was released. A version described as "a working deliverable", OpenXanadu, was made available in 2014. 
+Another crypto challenge I started with looking up the title "xanadu" and found the Wikipedia page on [project Xanadu](https://en.wikipedia.org/wiki/Project_Xanadu):
 
-While it was a fun read, it didn't help much though maybe there is a reference am missing. The given string seems to be an encrypted alphabetic text similar to Caesar cipher, but there are a password and it's given to us. At first, I thought the password was "blreiefb" because of the common format "text/email: password" and ended up wasting time then decided to make sure what kind of encryption is used and a found a handy tool called <a href="https://github.com/nccgroup/featherduster">FeatherDuster</a>:
+> Project Xanadu was the first hypertext project, founded in 1960 by Ted Nelson. Administrators of Project Xanadu have declared it an improvement over the World Wide Web, with mission statement: "Today's popular software simulates paper. The World Wide Web \(another imitation of paper\) trivialises our original hypertext model with one-way ever-breaking links and no management of version or contents."\[1\]
+>
+> Wired magazine published an article called "The Curse of Xanadu", calling Project Xanadu "the longest-running vaporware story in the history of the computer industry".\[2\] The first attempt at implementation began in 1960, but it was not until 1998 that an incomplete implementation was released. A version described as "a working deliverable", OpenXanadu, was made available in 2014.
+
+While it was a fun read, it didn't help much though maybe there is a reference am missing. The given string seems to be an encrypted alphabetic text similar to Caesar cipher, but there are a password and it's given to us. At first, I thought the password was "blreiefb" because of the common format "text/email: password" and ended up wasting time then decided to make sure what kind of encryption is used and a found a handy tool called [FeatherDuster](https://github.com/nccgroup/featherduster):
+
 > FeatherDuster is a tool for breaking crypto; It tries to make the process of identifying and exploiting weak cryptosystems as easy as possible. Cryptanalib is the moving parts behind FeatherDuster, and can be used independently of FeatherDuster.
 
- and decided to give it a try:
-~~~
+and decided to give it a try:
+
+```text
 $: featherduster xanadu.txt                                                      (master|…) 6:38:34
 Welcome to FeatherDuster!
 
@@ -72,25 +77,27 @@ FeatherDuster> analyze
                           , and the one-time pad.
    vigenere             - A module to break vigenere ciphers using index of coincidence for
                           key length detection and frequency analysis.
-~~~ 
-I did not really need to use the tool but, it confirmed that the encryption used is <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère cipher</a> so I went back to <a href="https://gchq.github.io/CyberChef/">CyperChef</a> and used <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Decode</a> and tried with the passphrase "blreiefb" but it was wrong my second guess was the name of the challenge "xanadu":
-~~~
+```
+
+I did not really need to use the tool but, it confirmed that the encryption used is [Vigenère cipher](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) so I went back to [CyperChef](https://gchq.github.io/CyberChef/) and used [Vigenère Decode](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) and tried with the passphrase "blreiefb" but it was wrong my second guess was the name of the challenge "xanadu":
+
+```text
 Input: Qhr nhrq lrvhf fs uoulfbye. Ln oenlos fs. Eedfiy. V mhuk... tuaw'm qhr pdmpwbrg: blreiefb
 Recipe: Vigenère Decode, Key = "xanadu"
 Output: The next level is horrible. It really is. Really. I mean... that's the password: horrible
-~~~
+```
 
 found the password for the next level "horrible" bring it on.
 
-### #8 Last-minute calculations [Math,Unknown]:
+## \#8 Last-minute calculations \[Math,Unknown\]:
 
 > It seems that one of our developers has been helping candidates cheat on the test; seems it was a mistake to transfer him from Finance. We found the following note being passed, but we don't know what it means.
-> 
-> Maybe you could figure it out for us?
-<span class="image fit"><img src="{{ "/images/horrible.jpg" | absolute_url }}" alt="" /></span>
+>
+> Maybe you could figure it out for us? ![](https://github.com/Bad3r/Bad3r-blog/tree/501930b64c6ef02b40e53942547eaa8a7be319a6/_posts/%7B%7B)
 
 This is a math problem so I started by using bc:
-~~~
+
+```text
 ┌ ~
 └> % bc                                                                                       8:54:42
 bc 1.07.1
@@ -99,24 +106,26 @@ This is free software with ABSOLUTELY NO WARRANTY.
 For details type `warranty'. 
 (2 * 3922138 - 18368) / 1101
 7108
-~~~
+```
+
 the calculated number is 7108 there is a hint in the picture that says “flip!” because this is a math problem, and the output is an integer I remembered how you could spell words in a calculator, but I didn’t have one next to me, so I wrote a python script that takes in a number and gets the letters equivalent to the digits and flips it:
-~~~ python
+
+```python
 #! /usr/bin/python3
 '''
 It's known that when digital digits are looked at upside down they resemble an English letter.
 this script given a number it will convert it to English letters using the calculation:
-Number  	 Letter
-0       	 O/D
-1       	 l
-2       	 Z
-3       	 E
-4       	 h
-5       	 S
-6       	 g
-7       	 L
-8       	 B
-9       	 G
+Number       Letter
+0            O/D
+1            l
+2            Z
+3            E
+4            h
+5            S
+6            g
+7            L
+8            B
+9            G
 example : 
     number  = 77345
     letters = LLESH
@@ -158,13 +167,14 @@ def main():
 
 if __name__ == '__main__':
     main()
-~~~
+```
 
 then I ran the script:
-~~~ bash
+
+```bash
 ┌ ~
 └> % python3 ./numToStringCalculator.py  
-      
+
  Github : https://github.com/bad3r         
  Twitter: https://twitter.com/bd3r_       
  Site   : https://bad3r.xyz/              
@@ -173,40 +183,29 @@ then I ran the script:
 Enter a number:
 7108
 word = b(d/o)il
-~~~
+```
 
-The output is "b(d/o)il" the 2nd letter could be either 'd' or 'o' if it's 'o' the word would be "boil" tested it out and that was the password.
+The output is "b\(d/o\)il" the 2nd letter could be either 'd' or 'o' if it's 'o' the word would be "boil" tested it out and that was the password.
 
+## \#9 Darkest darkness \[Steg\]:
 
-### #9 Darkest darkness [Steg]:
-
-> <span class="image fit"><img src="{{ "/images/boil.png" | absolute_url }}" alt="" /></span>
+> ![](https://github.com/Bad3r/Bad3r-blog/tree/501930b64c6ef02b40e53942547eaa8a7be319a6/_posts/%7B%7B)
 
 All you get for this challenge is a black picture, and the title is "Darkest darkness" made me think that all I have to do is reset the color table; therefore, I opened Gimp and loaded the picture after that from the menu at the top:
 
-Colors --> Auto --> equalize
+Colors --&gt; Auto --&gt; equalize
 
-and a word showed up on the screen "rosebud" and what do you know its the password for the next level :).
-Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp (Colors → Map → Set Color Map) or by editing the data directly (change bytes 13, 14 and 15 of the file from 000000 to ffffff).
+and a word showed up on the screen "rosebud" and what do you know its the password for the next level :\). Note that there is other ways to solve this you can retrieve the message by restoring the color table in a graphics editor like Gimp \(Colors → Map → Set Color Map\) or by editing the data directly \(change bytes 13, 14 and 15 of the file from 000000 to ffffff\).
 
-<span class="image fit"><img src="{{ "/images/boil-solved.png" | absolute_url }}" alt="" /></span>
+![](https://github.com/Bad3r/Bad3r-blog/tree/501930b64c6ef02b40e53942547eaa8a7be319a6/_posts/%7B%7B)
 
-### #10 Resource Locator [Web]:
+## \#10 Resource Locator \[Web\]:
 
-> WhA7h8Qw   Q4USYkzu   PhVM3EzQ
-> LDeRGXQL   L7NYT5a8   KtvBT5uZ
-> GWsMqMzu   8JPtM9a3   hgcBHHWf
-> Tk5rSPdj   eB44EE74   2uwUxyMK
-> UyjHFuLP   jGJuVGiK   JMFpnqB7
-> Kfdew6kp   ECfMJt4E   HFdwhM9T
-> 7vDsdaNP   V2fEJ3Wu   YYbbiB2e
-> 8GrEu7mH   k67HHw7d   aKbVhkaz
-> pyWfzjBk   tTwnNqMR   7mF48BCT
-> muMDb92e   wd6UZvtG   Xcdx25Mv
-> AuFGZVDv   B3zJNaCV   EcVM7uxx
+> WhA7h8Qw Q4USYkzu PhVM3EzQ LDeRGXQL L7NYT5a8 KtvBT5uZ GWsMqMzu 8JPtM9a3 hgcBHHWf Tk5rSPdj eB44EE74 2uwUxyMK UyjHFuLP jGJuVGiK JMFpnqB7 Kfdew6kp ECfMJt4E HFdwhM9T 7vDsdaNP V2fEJ3Wu YYbbiB2e 8GrEu7mH k67HHw7d aKbVhkaz pyWfzjBk tTwnNqMR 7mF48BCT muMDb92e wd6UZvtG Xcdx25Mv AuFGZVDv B3zJNaCV EcVM7uxx
 
-Some random strings, not much to go by. The title is “Resource Locator,” and it’s a web challenge which made me think of URL (Uniform Resource Locator) and that was the first hint. Decided to check the web page HTML using the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector">inspect element tool</a> and found the second hint:
-~~~ html
+Some random strings, not much to go by. The title is “Resource Locator,” and it’s a web challenge which made me think of URL \(Uniform Resource Locator\) and that was the first hint. Decided to check the web page HTML using the [inspect element tool](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Open_the_Inspector) and found the second hint:
+
+```markup
 <!--c2 r5   ->   Pbin-->
 <!--
 
@@ -214,29 +213,36 @@ optional hint:
 
 150 157 167 40 151 163 40 164 150 145 40 151 156 146 157 162 155 141 164 151 157 156 40 157 156 40 164 150 145 40 160 141 147 145 40 141 162 162 141 156 147 145 144 77 40 167 150 141 164 40 164 145 162 155 163 40 144 145 163 143 162 151 142 145 40 164 150 151 163 40 141 162 162 141 156 147 145 155 145 156 164 77 40 144 157 145 163 40 164 150 141 164 40 143 157 162 162 145 163 160 157 156 144 40 164 157 40 171 157 165 162 40 150 151 156 164 77 12 122 145 155 145 155 142 145 162 40 164 150 141 164 40 171 157 165 40 143 141 156 40 146 151 156 144 40 164 151 160 163 40 150 145 162 145 72 40 150 164 164 160 72 57 57 160 141 163 164 145 142 151 156 56 143 157 155 57 124 164 147 151 156 62 166 115 40 50 146 162 157 155 40 154 157 147 151 156 40 160 141 147 145 51
 -->
-~~~
-The critical thing to note here is that two hints are given above; the hint and the optional hint.
-Started with decoding the optional hint using <a href="https://gchq.github.io/CyberChef/">CyperChef</a> it looked like octal data format when converted I got:
-~~~
+```
+
+The critical thing to note here is that two hints are given above; the hint and the optional hint. Started with decoding the optional hint using [CyperChef](https://gchq.github.io/CyberChef/) it looked like octal data format when converted I got:
+
+```text
 how is the information on the page arranged? what terms describe this arrangement? does that correspond to your hint?
 Remember that you can find tips here: http://pastebin.com/Ttgin2vM (from login page)
-~~~
+```
+
 The pastebin leads to the wargame rules/tools page but on pastebin which made me notice the resource on the pastebin URL “Ttgin2vM” that looks like the strings given to us in the challenge. And the hint mentions how the given data is arranged also given from the hint “c2 r5” that's column2 and raw5 in the matrix == “jGJuVGiK”.
 
-next i went to https://pastebin.com/jGJuVGiK and found:
-~~~
+next i went to [https://pastebin.com/jGJuVGiK](https://pastebin.com/jGJuVGiK) and found:
+
+```text
     6F 66 20 74 68 65 20 73 70 65 63 69 65 73 20 52 61 6E 67 69 66 65 72 20 74 61 72 61 6E 64 75 73
-~~~
-That looked like a hex code to me so I converted it in <a href="https://gchq.github.io/CyberChef/">CyperChef</a>:
-~~~
+```
+
+That looked like a hex code to me so I converted it in [CyperChef](https://gchq.github.io/CyberChef/):
+
+```text
 of the species Rangifer tarandus
-~~~
+```
+
 I googled "Rangifer tarandus" and it's another name for "reindeer" and that was the password for this level.
 
-### #10 Bonus achievement (Leave No Stone Unturned): 
+## \#10 Bonus achievement \(Leave No Stone Unturned\):
 
-I decided to test the rest of the resources in challenge #10, but instead of doing it manually I wrote a script that takes in the data and test each resource and if it's valid then it will save the data from the pastebin into a test file:
-~~~ python
+I decided to test the rest of the resources in challenge \#10, but instead of doing it manually I wrote a script that takes in the data and test each resource and if it's valid then it will save the data from the pastebin into a test file:
+
+```python
 import io
 import urllib.request
 from urllib.request import urlopen
@@ -320,9 +326,11 @@ def main():
 
 if __name__ == '__main__':
     main()
-~~~
+```
+
 ran the script with the given data:
-~~~ bash
+
+```bash
 ┌ ~
 └> % python3 ./pastebinResourceLocator.py    
 
@@ -377,15 +385,15 @@ URL: http://pastebin.com/raw/YYbbiB2e
 Death twitches my ear;
 'Live,' he says...
 'I'm coming.'
-~~~
-The first link is the sloution for challenge #10 but the second link contains a quote:
+```
 
-> Death twitches my ear;
-> 'Live,' he says...
-> 'I'm coming.'
+The first link is the sloution for challenge \#10 but the second link contains a quote:
+
+> Death twitches my ear; 'Live,' he says... 'I'm coming.'
 
 With some googling Found that this is a quote by virgil tried that as a passphrase "virgil" and unlocked the achievement "Leave No Stone Unturned".
 
- > This was not the answer, however you've unlocked an achievement:
- >
- > Leave No Stone Unturned
+> This was not the answer, however you've unlocked an achievement:
+>
+> Leave No Stone Unturned
+
