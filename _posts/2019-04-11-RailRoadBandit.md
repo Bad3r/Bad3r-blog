@@ -11,14 +11,6 @@ image: /images/2019-3-15-4-46-23.jpg
 category: writeup
 ---
 
-# ae27ff  wargame challenges 6-10 sloutions
-
-Decided to write the sloutions i used to solve [ae27ff](http://ae27ff.meme.tips/) wargame challenges.
-
-> [ae27ff](http://ae27ff.meme.tips/) is a set of levels that simulate challenges and puzzles that one may encounter during an ARG \(Alternate Reality Game\) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources. Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.
-
-## \#6 Defeated by brutes! \[Crypto\]:
-
 ## Intro:
 
 There is a File Content Disclosure vulnerability in Action View affecting Rails versions <5.2.2.1, <5.1.6.2, <5.0.7.2, <4.2.11.1.
