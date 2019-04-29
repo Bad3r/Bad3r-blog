@@ -3,7 +3,6 @@ layout: post
 title:  "RailRoadBandit CVE-2019-5418"
 date:   2019-04-11
 excerpt: "Reproducution and demonistration of the vulnerablity"
-image: "/images/ruby_on_rails.png"
 category: writeup
 tags: [ruby, CVE,demo]
 comments: false
