@@ -12,9 +12,7 @@ image: /images/ruby_on_rails.png
 category: writeup
 ---
 
-# 2019-04-10-RailRoadBandit
-
-## Intro:
+## introduction:
 
 There is a File Content Disclosure vulnerability in Action View affecting Rails versions &lt;5.2.2.1, &lt;5.1.6.2, &lt;5.0.7.2, &lt;4.2.11.1. Specially crafted accept headers in combination with calls to '''render file: '''can cause arbitrary files on the target server to be rendered, disclosing the file contents. The impact is limited to calls to '''render''' which render file contents without a specified accept format.
 
